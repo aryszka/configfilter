@@ -5,8 +5,9 @@
 // SelfRoutes), or in routes taken from another data client. The data client needs to be passed to Skipper among
 // the custom data clients.
 //
-// The config filter provides an HTTP API to get/set/delete all or individual routes. The exact endpoints. For
-// individual routes, :routeid wildcard.
+// The config filter provides an HTTP API to get/set/delete all or individual routes. It has two endpoints, one
+// for accessing all the routes, and one for accessing individual routes with their ID. For individual routes,
+// the routing needs to include the :routeid wildcard in the path predicate.
 //
 // See the value of the APIDescription constant for the API description.
 package configfilter
